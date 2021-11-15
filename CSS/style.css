@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+.font-italic{
+	 font-style: italic !important; 
+}
+@media only screen and (max-width: 576px) {
+	.onglet-content {
+		min-width: 190px;
+	}
+  }
+
+body{
+	font-family: "Google Sans", Roboto, arial, sans-serif;
+}
+nav{
+	background: white;
+	height: 80px;
+	box-shadow:0px 2px 5px gray;
+	margin-bottom: 30px;
+}
+nav ul li {
+	margin-right: 19px;
+	color: black;
+	line-height: 60px;
+}
+nav ul li .active{
+	border-bottom: 5px solid #CD0033;
+}
+li a{
+	font-weight: bold;
+}
+button{
+	border-radius: 15px;
+	color: white;
+}
+.onglet-menu{
+	margin-left: 10%;
+}
+.nav-link{
+	color: red;
+}
+.child1 {
+	position: relative;
+	padding: 20px 20px 20px 20px;
+	z-index: 950;
+	width: 700px;
+	background-color: white;
+}
+.child1 .child2{
+	display: contents;
+}
+.child2 {
+	position: relative;
+	min-width: 24em;
+	z-index: 900;
+	background-color: #CD0033;
+	left: -460px;
+	top: -19px;
+	transform: rotate(6deg);
+	border-radius: 8px;
+}
+.deg{
+	min-height: 100px;
+	border-radius: 0px 0px 90px 0px;
+}
+.deg0{
+	background-color: rgb(205, 0, 51);
+	color: white;
+}
+.deg1{
+	background-color: rgba(205, 0, 51, 0.75);
+	position: relative;
+	top: -85px;
+}
+.deg2{
+	background-color: rgba(205, 0, 51, 0.5);
+	position: relative;
+	top: -170px;
+}
+.text-ouverture{
+	font-weight: 66px;
+	float: right;
+}
+.text-date{
+	float: right;
+	font-weight: bold;
+	font-size: 70px;
+}
+.blog8{
+	position: relative;
+}
+h1, h2, h3{
+	color: #CD0033;
+}
+p{
+	font-size: 16px;
+}
+.valeur{
+	border-bottom: 9px solid #CD0033;
+	box-shadow: 0px 1px 20px 1px #DEDEDE;
+	font-family: sans-serif;
+	max-width: 190px;
+	font-size: 13px;
+	height: 150px;
+	font-size: 14px;
+}
+.trait{
+	max-width: 30px;
+	min-height: 6px;
+	border-radius: 8px;
+}
+.plier-6{
+	min-width: 1300px;
+}
+.image-slider{
+	border-radius: 29px;
+	pointer-events: none;
+	position: relative;
+	margin-top: -80px;
+	box-shadow: 17px -16px #CD0033;
+}
+
+/*Nos valeurs*/
+.triangle {
+	width: 0;
+	position: relative;
+	height: 0;
+	margin-top: 25px;
+	transform: rotate(-90deg);
+	border: 0 solid transparent;
+	border-right-width: 30px;
+	border-left-width: 30px;
+	border-bottom: 20px solid #CD0033;
+}
+.onglet_general{
+	position: relative;
+}
+
+.onglet-number{
+	border-radius: 50% 50%;
+	text-align: center;
+	background-color: rgba(205, 0, 51, 0.20);
+	padding: 12px 1px 12px 1px;
+}
+.onglet-number > h1{
+	text-align: center;
+	color: #CD0033;
+}
+.onglet-content{
+	padding: 10px 10px;
+	box-shadow: 1px 1px 18px #BFBFBF;
+}
+
+/*Equipe*/
+
+.equipe h6{
+	font-weight: bold;
+	color: #CD0033;
+}
+.equipe p{
+	padding-top: -20px;
+	font-weight: 500 ;
+	color: #CD0033;
+}
+
+/*Nos chiffre*/
+
+.chiffres{
+	padding-top: 60px;
+	min-height: 250px;
+	background-image: url("img/bgChiffre.png");
+}
+.chiffres h1{
+	color: white;
+	font-size: 60px;
+}
+.chiffres p{
+	color: white;
+	font-size: 19px;
+}
+
+/*footer*/
+
+.footer{
+	background-image: url("img/bgFooter.png");
+	width: 100%;
+	height: auto;
+	color: white;
+}
+.footer
+
+/*Recrutement*/
+
+.input{
+	height: 40px;
+}
+.accordion-button::after {
+	background-image: url("img/iconePlus.png");
+}
+.accordion-button:not(.collapsed)::after {
+	background-image: url("img/iconeMoins.png");
+}
