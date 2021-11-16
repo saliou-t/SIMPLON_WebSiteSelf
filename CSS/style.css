@@ -13,7 +13,7 @@ body{
 	font-family: 'Nunito Sans', sans-serif !important;
 }
 nav{
-	background: white;
+	background-color: white !important;
 	height: 80px;
 	box-shadow:0px 2px 5px gray;
 	margin-bottom: 30px;
@@ -38,9 +38,7 @@ button{
 	font-size: 32px;
 	color: #CD0033;
 }
-.onglet_text_title{
-	color: blue !important;
-}
+
 .onglet-menu{
 	margin-left: 10%;
 }
@@ -53,6 +51,8 @@ button{
 	z-index: 950;
 	width: 700px;
 	background-color: white;
+	left: 90px; border-radius: 8px; 
+	box-shadow: 0px 0px 5px white;
 }
 .child1 .child2{
 	display: contents;
@@ -62,11 +62,12 @@ button{
 	min-width: 24em;
 	z-index: 900;
 	background-color: #CD0033;
-	left: -460px;
-	top: -19px;
+	left: -43%;
+	top: -22px;
 	transform: rotate(6deg);
 	border-radius: 8px;
 }
+
 .deg{
 	min-height: 100px;
 	border-radius: 0px 0px 90px 0px;
@@ -131,7 +132,15 @@ p{
 	min-height: 600px;
 	max-width: 100% !important;
 	background-size: cover;   
-
+}
+.text-hidden{
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px;
+	margin: 15px 15px;
+	border-radius: 0px 0px 80px 0px;
+	text-align: right;
 }
 
 /*Nos valeurs*/

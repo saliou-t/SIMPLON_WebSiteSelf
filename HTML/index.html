@@ -12,7 +12,7 @@
 </head>
                                          <!-- Barre de  navigation-->
 <body>       
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="img/logo1.png" class="mx-4" width="170" height="60" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,11 +46,13 @@
                     <li class="nav-item">
                         <a class="nav-link disabled text-dark" href="#" tabindex="-1" >Espace</a>
                     </li>
-                    <li class="nav-item mx-5">
-                        <a class="nav-link search" onclick="search()" href="#"><img src="img/search.svg" alt=""></a>
+                    <li class="nav-item mx-5"  onclick="search()">
+                        <a class="nav-link search" href="#">
+                            <img src="img/search.svg" alt="">
+                        </a>
                     </li>
-                    <li class="nav-item dropdown  mx-5">
-                        <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button"  aria-expanded="false">Français</a>
+                    <li class="nav-item dropdown" style="left: 12%;">
+                        <a class="nav-link dropdown-toggle text-danger" data-bs-toggle="dropdown" href="#" role="button"  aria-expanded="false"><span class="text-dark">Français</span> </a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">English</a>
                         </div>
@@ -62,15 +64,25 @@
             </div>
         </div>
     </nav>
+                                                            <!-- search bar -->
+    <section class="row justify-content-sm-around" style="display: none;" id="searchBar">
+        <h2 class="blog-title">Rechercher par mot clé</h2>
+        <div class="col text-center">
+            <form class="d-flex">
+                <input class="form-control me-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-danger my-2 my-sm-0" type="submit">Search</button>
+              </form>
+        </div>
+    </section>
                                                         <!-- La petite histoire-->
     <section class="container-fluid my-2">
         <div id="carousel-nos-ph" class="carousel slide" data-bs-ride="carousel">
             <div class="col justify-content"><h2 class="text-center blog-title">La petite histoire</h2></div>
-            <aside class="carousel-inner">
+            <aside class="carousel-inner w-sm-100">
                 <div class="carousel-item active" data-bs-interval="10000">
                     <div class="row my-5">
-                        <div class="col-lg-5 align-content-center mt-5">
-                            <div class="deg deg0 w-100 text-end mt-5 d-none d-sm-block">
+                        <div class="col col-lg-5 align-content-center mt-5 d-none d-md-block">
+                            <div class="deg deg0 w-100 text-end mt-5 ">
                                 <div class="px-3 pb-4" style=" height: 116px; z-index: 3; position: relative;">
                                     <h2 class="text-ouverture mx-4 text-light">L'ouverture de la fabrique <br><span>2018</span></h2>
                                 </div>
@@ -78,12 +90,15 @@
                             <div style="z-index: 1; position: relative;" class="d-none d-sm-block mx deg deg1 w-100"></div>
                             <div style="z-index: 2; position: relative;" class="d-none d-sm-block deg deg2 w-100" ></div>
                         </div>
-                        <div class="col">
+                        <div class="col ">
                             <div class="row parent">
-                                <div  class="mx-5 col child1 px-5  border border-danger" style="border-radius: 8px; box-shadow: 0px -1px 9px white;" >
+                                <div class="row">
+                                    <div class="col d-block d-md-none bg-danger text-hidde">Ouverture de la fabrique</div>
+                                </div>
+                                <div  class="mx-5 col child1  w-100 border border-danger" style="max-height: 411px;" >
                                     <img src="img/quote2.png" alt="quote 2" style="pointer-events: none;">
-                                    <p class="font-italic text-center ">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident modi sunt earum sequi sed maxime, temporibus laudantium quos dolorum corrupti quibusdam facere velit nam deserunt dignissimos obcaecati atque iste! Sed labore voluptatem quam id facilis ipsa. Quod, voluptates quaerat dolore eum architecto iusto earum soluta iste rerum perferendis ullam eveniet! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, voluptatum.
+                                    <p class="px-3 font-italic text-center ">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident modi sunt earum sequi sed maxime, temporibus laudantium quos dolorum corrupti quibusdam facere velit nam deserunt dignissimos obcaecati atque iste! Sed labore voluptatem quam id facilis ipsa. Quod, voluptates quaerat dolore eum architecto iusto earum soluta iste rerum perferendis ullam eveniet! Lorem ipsum, dolor sit amet consectetur
                                     </p>
                                     <img alt="quoite 1" style="font-size: 30px; pointer-events: none; float: right;" src="img/quote1.png">
                                 </div>
@@ -96,25 +111,28 @@
                 </div>
                 <div class="carousel-item" data-bs-interval="10000">
                     <div class="row my-5">
-                        <div class="col-lg-5">
-                            <div class="deg deg0 w-100 text-end mt-5">
+                        <div class="col col-lg-5 align-content-center mt-5 d-none d-md-block">
+                            <div class="deg deg0 w-100 text-end mt-5 ">
                                 <div class="px-3 pb-4" style=" height: 116px; z-index: 3; position: relative;">
-                                    <h2 class="text-ouverture mx-4 text-light">La première promo DWWM <br><span>2019</span></h2>
+                                    <h2 class="text-ouverture mx-4 text-light">L'ouverture de la fabrique <br><span>2019</span></h2>
                                 </div>
                             </div>
-                            <div style="z-index: 1; position: relative;" class="mx  deg deg1 w-100"></div>
-                            <div style="z-index: 2; position: relative;" class="deg deg2 w-100" ></div>
+                            <div style="z-index: 1; position: relative;" class="d-none d-sm-block mx deg deg1 w-100"></div>
+                            <div style="z-index: 2; position: relative;" class="d-none d-sm-block deg deg2 w-100" ></div>
                         </div>
                         <div class="col">
                             <div class="row parent">
-                                <div  class="mx-5 col child1 px-5  border border-danger" style="border-radius: 8px; box-shadow: 0px -1px 9px white;" >
+                                <div class="row">
+                                    <div class="col d-block d-md-none bg-danger text-hidde">Ouverture de la fabrique</div>
+                                </div>
+                                <div  class="mx-5 col child1  w-100 border border-danger" style="max-height: 411px;" >
                                     <img src="img/quote2.png" alt="quote 2" style="pointer-events: none;">
-                                    <p class="font-italic text-center">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident modi sunt earum sequi sed maxime, temporibus laudantium quos dolorum corrupti quibusdam facere velit nam deserunt dignissimos obcaecati atque iste! Sed labore voluptatem quam id facilis ipsa. Quod, voluptates quaerat dolore eum architecto iusto earum soluta iste rerum perferendis ullam eveniet! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, voluptatum.
+                                    <p class="px-3 font-italic text-center ">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident modi sunt earum sequi sed maxime, temporibus laudantium quos dolorum corrupti quibusdam facere velit nam deserunt dignissimos obcaecati atque iste! Sed labore voluptatem quam id facilis ipsa. Quod, voluptates quaerat dolore eum architecto iusto earum soluta iste rerum perferendis ullam eveniet! Lorem ipsum, dolor sit amet consectetur
                                     </p>
                                     <img alt="quoite 1" style="font-size: 30px; pointer-events: none; float: right;" src="img/quote1.png">
                                 </div>
-                                <div class="sous-blog2 col-md child2 shadow-lg">
+                                <div class="col-md child2 shadow-lg">
                               
                                 </div>
                             </div>
@@ -123,56 +141,54 @@
                 </div>
              <div class="carousel-item" data-bs-interval="10000">
                 <div class="row my-5">
-                    <div class="col-lg-5">
-                        <div class="deg deg0 w-100 text-end">
+                    <div class="col col-lg-5 align-content-center mt-5 d-none d-md-block">
+                        <div class="deg deg0 w-100 text-end mt-5 ">
                             <div class="px-3 pb-4" style=" height: 116px; z-index: 3; position: relative;">
                                 <h2 class="text-ouverture mx-4 text-light">L'ouverture de la fabrique <br><span>2020</span></h2>
                             </div>
                         </div>
-                        <div style="z-index: 1; position: relative;" class="mx  deg deg1 w-100"></div>
-                        <div style="z-index: 2; position: relative;" class="deg deg2 w-100" ></div>
+                        <div style="z-index: 1; position: relative;" class="d-none d-sm-block mx deg deg1 w-100"></div>
+                        <div style="z-index: 2; position: relative;" class="d-none d-sm-block deg deg2 w-100" ></div>
                     </div>
                     <div class="col">
                         <div class="row parent">
-                            <div  class="mx-5 col child1 px-5  border border-danger" style="border-radius: 8px; box-shadow: 0px -1px 9px white;" >
+                            <div class="row">
+                                <div class="col d-block d-md-none bg-danger text-hidde">Ouverture de la fabrique</div>
+                            </div>
+                            <div  class="mx-5 col child1  w-100 border border-danger" style="max-height: 411px;" >
                                 <img src="img/quote2.png" alt="quote 2" style="pointer-events: none;">
-                                <p class="font-italic text-center">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident modi sunt earum sequi sed maxime, temporibus laudantium quos dolorum corrupti quibusdam facere velit nam deserunt dignissimos obcaecati atque iste! Sed labore voluptatem quam id facilis ipsa. Quod, voluptates quaerat dolore eum architecto iusto earum soluta iste rerum perferendis ullam eveniet! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, voluptatum.
+                                <p class="px-3 font-italic text-center ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident modi sunt earum sequi sed maxime, temporibus laudantium quos dolorum corrupti quibusdam facere velit nam deserunt dignissimos obcaecati atque iste! Sed labore voluptatem quam id facilis ipsa. Quod, voluptates quaerat dolore eum architecto iusto earum soluta iste rerum perferendis ullam eveniet! Lorem ipsum, dolor sit amet consectetur
                                 </p>
                                 <img alt="quoite 1" style="font-size: 30px; pointer-events: none; float: right;" src="img/quote1.png">
                             </div>
-                            <div class="sous-blog2 col-md child2 shadow-lg">
+                            <div class="col-md child2 shadow-lg">
                           
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+        </div>
         </aside>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel-nos-ph" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button><br><br>
+        
     </div>
     </section>
     								     <!-- notre pédagogie -->	
 	<section class="container-fluid" id="notrePedagogie">
-        <div class="row my-5">
+        <div class="row">
             <div class="col text-center"><p class="blog-title" >Notre pédagogie</p></div>
         </div>
         <div class="row my-5 px-5">
-            <div class="col-sm-12 col-md-6 ">
-                <iframe width="586" height="363" src="https://www.youtube.com/embed/0PeqnLq12V8" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="col-12 col-md-6 ">
+                <iframe width="664" height="322" src="https://www.youtube.com/embed/0PeqnLq12V8" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="col-sm-12 col-md-6 ">
+            <div class="col-12 col-md-5  ">
                 <h2 class="mb-5" >La pédagogie active</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Sed dolorem, quisquam ad aliquam voluptate et, esse corrupti, nulla animi itaque sint vel deleniti nostrum adipisci? Vitae eaque doloribus molestias aspernatur enim id optio ullam incidunt veritatis, ratione quos, officia debitis? Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Dignissimos, labore quibusdam, voluptatem adipisci iste cupiditate beatae iure, suscipit nemo delectus incidunt fugit reprehenderit laborum. Cumque odit quia distinctio eius sequi! </p>
             </div>
         </div>      
-		<div class="row my-5">
-			<div class="col-2"></div><div class="col-2"></div><div class="col-1"></div>
+		<div class="row my-5 justify-content-center">
 			<div class="col-1 trait bg-danger border border-danger"></div>
-			<div class="col-2"></div><div class="col-2"></div><div class="col-2"></div>
 		</div>
 		<div class="row border">
 			<div class="col-8">
@@ -656,19 +672,6 @@
         </div>
     </section>
     <div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-nos-equipe" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel-nos-equipe" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button><br><br><br><br>
-        <div class="carousel-indicators" style="margin-left: 1300px;">
-            <button type="button" data-bs-target="#carousel-nos-equipe" data-bs-slide-to="0" class="active text-danger mx-1" aria-current="true" aria-label="Slide 1"><span class="bg-danger" style="border-radius: 50% 50%;">ds</span></button>
-            <button type="button" data-bs-target="#carousel-nos-equipe" data-bs-slide-to="1" aria-label="Slide 2" class="text-danger mx-3"><span class="bg-danger" style="border-radius: 200px;">dsssss</span></button>
-            <button type="button" data-bs-target="#carousel-nos-equipe" data-bs-slide-to="2" aria-label="Slide 3" class="text-danger mx-4"><span class="bg-danger" style="border-radius: 50% 50%;">ds</span></button>
-        </div>
     </div>
                                                     <!--  Recrutement --> 
     <section class="container" id="recrutement">
