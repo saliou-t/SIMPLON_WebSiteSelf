@@ -10,7 +10,7 @@
   }
 
 body{
-	font-family: Nunito, Roboto, arial, sans-serif;
+	font-family: 'Nunito Sans', sans-serif !important;
 }
 nav{
 	background: white;
@@ -37,6 +37,9 @@ button{
 	font-weight: bold;
 	font-size: 32px;
 	color: #CD0033;
+}
+.onglet_text_title{
+	color: blue !important;
 }
 .onglet-menu{
 	margin-left: 10%;
@@ -136,19 +139,24 @@ p{
 	width: 0;
 	position: relative;
 	height: 0;
-	margin-top: 25px;
+	margin-top: 45px;
+	margin-left: 33px;
 	transform: rotate(-90deg);
 	border: 0 solid transparent;
-	border-right-width: 30px;
-	border-left-width: 30px;
+	border-right-width: 25px;
+	border-left-width: 25px;
+	border-top: 80px;
 	border-bottom: 20px solid #CD0033;
 }
 .onglet_general{
 	position: relative;
 }
+.engagement{
+	min-height: 110px;
+}
 
 .onglet-number{
-	border-radius: 200px;
+	border-radius: 250px;
 	width: 67px;
 	text-align: center;
 	background-color: rgba(205, 0, 51, 0.20);
@@ -159,8 +167,27 @@ p{
 	color: #CD0033;
 }
 .onglet-content{
+	cursor: pointer;
 	padding: 10px 10px;
-	box-shadow: 1px 1px 18px #BFBFBF;
+	box-shadow: 0px 0px 10px #BFBFBF;
+}
+.onglet-content:hover{
+	background-color :rgba(205, 0, 51, 0.1);
+	transition: 0.2s;
+}
+.onglet-sub-title{
+	font-size: 22px;
+}
+.btn-see-more{
+	border-radius: 90px !important;
+} 
+.btn-see-more a{
+	padding: 4px;
+	color: white;
+	text-decoration: none;
+}
+.btn-see-more a:hover{
+	color: white;
 }
 
 /*Equipe*/
