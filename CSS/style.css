@@ -39,6 +39,9 @@ button{
 	color: #CD0033;
 }
 
+.onglet_text_title{
+	color: blue !important;
+}
 .onglet-menu{
 	margin-left: 10%;
 }
