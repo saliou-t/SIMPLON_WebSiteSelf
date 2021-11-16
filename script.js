@@ -17,8 +17,8 @@ var donnees = [
 	],
 ];
 
-	function ongletFocus(id, number, marginT){
-		var onglet_selected = document.getElementById(id);
+	function ongletFocus(classe, number, marginT){
+		var onglet_selected = document.getElementsByClassName(classe);
 		var onglet_nodes = onglet_selected.childNodes;
 		
 		//alert(onglet_nodes[3].textContent);

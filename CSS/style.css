@@ -10,7 +10,7 @@
   }
 
 body{
-	font-family: "Google Sans", Roboto, arial, sans-serif;
+	font-family: Nunito, Roboto, arial, sans-serif;
 }
 nav{
 	background: white;
@@ -32,6 +32,11 @@ li a{
 button{
 	border-radius: 15px;
 	color: white;
+}
+.blog-title{
+	font-weight: bold;
+	font-size: 32px;
+	color: #CD0033;
 }
 .onglet-menu{
 	margin-left: 10%;
@@ -92,6 +97,10 @@ button{
 h1, h2, h3{
 	color: #CD0033;
 }
+h4{
+	color: white;
+	font-size: 49px !important;
+}
 p{
 	font-size: 16px;
 }
@@ -99,9 +108,8 @@ p{
 	border-bottom: 9px solid #CD0033;
 	box-shadow: 0px 1px 20px 1px #DEDEDE;
 	font-family: sans-serif;
-	max-width: 190px;
 	font-size: 13px;
-	height: 150px;
+	height: 160px;
 	font-size: 14px;
 }
 .trait{
@@ -112,12 +120,15 @@ p{
 .plier-6{
 	min-width: 1300px;
 }
-.image-slider{
-	border-radius: 29px;
-	pointer-events: none;
-	position: relative;
-	margin-top: -80px;
+.valeur_slide{
+	z-index: 1000;
+	background-image: url("../img/slide1.jpg");
 	box-shadow: 17px -16px #CD0033;
+	border-radius: 20px;
+	min-height: 600px;
+	max-width: 100% !important;
+	background-size: cover;   
+
 }
 
 /*Nos valeurs*/
@@ -137,7 +148,8 @@ p{
 }
 
 .onglet-number{
-	border-radius: 50% 50%;
+	border-radius: 200px;
+	width: 67px;
 	text-align: center;
 	background-color: rgba(205, 0, 51, 0.20);
 	padding: 12px 1px 12px 1px;
@@ -175,6 +187,7 @@ p{
 	font-size: 60px;
 }
 .chiffres p{
+	
 	color: white;
 	font-size: 19px;
 }
