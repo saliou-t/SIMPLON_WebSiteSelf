@@ -13,7 +13,7 @@
                                          <!-- Barre de  navigation-->
 <body> 
     <main>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="img/logo1.png" class="mx-4" width="170" height="60" alt=""></a>
                 <button class="navbar-toggler col-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,8 +47,8 @@
                         <li class="nav-item">
                             <a class="nav-link disabled text-dark" href="#" tabindex="-1" >Espace</a>
                         </li>
-                        <li class="nav-item mx-5">
-                            <a class="nav-link search" onclick="search()" href="#"><img src="img/search.svg" alt=""></a>
+                        <li class="nav-item mx-5" onclick="search()">
+                            <a class="nav-link search" href="#"><img src="img/search.svg" alt=""></a>
                         </li>
                         <li class="nav-item dropdown text-danger mx-5">
                             <a class="nav-link dropdown-toggle text-danger" data-bs-toggle="dropdown" href="#" role="button"  aria-expanded="false"><span class="text-dark">Français</span> </a>
@@ -63,28 +63,31 @@
                 </div>
             </div>
         </nav>
-        <section id="searchBar">
-
+        <section id="searchBar" class="d-none">
+            <form class="d-flex">
+                <input class="form-control me-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+              </form>
         </section>
                                                             <!-- La petite histoire-->
-        <section class="container-fluid my-2">
+        <section class="container-fluid">
             <div id="carousel-nos-ph" class="carousel slide" data-bs-ride="carousel">
                 <div class="col justify-content"><h2 class="text-center blog-title">La petite histoire</h2></div>
                 <aside class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
                         <div class="row my-5">
                             <div class="col-lg-5 align-content-center mt-5">
-                                <div class="deg deg0 w-100 text-end mt-5 d-none d-sm-block">
+                                <div class="deg deg0 w-100 text-end mt-5 ">
                                     <div class="px-3 pb-4" style=" height: 116px; z-index: 3; position: relative;">
                                         <h2 class="text-ouverture mx-4 text-light">L'ouverture de la fabrique <br><span>2018</span></h2>
                                     </div>
                                 </div>
-                                <div style="z-index: 1; position: relative;" class="d-none d-sm-block mx deg deg1 w-100"></div>
-                                <div style="z-index: 2; position: relative;" class="d-none d-sm-block deg deg2 w-100" ></div>
+                                <div style="z-index: 1; position: relative;" class=" mx deg deg1 w-100"></div>
+                                <div style="z-index: 2; position: relative;" class=" deg deg2 w-100" ></div>
                             </div>
                             <div class="col">
                                 <div class="row parent">
-                                    <div  class="mx-5 col child1 px-5  border border-danger" style="border-radius: 8px; box-shadow: 0px -1px 9px white;" >
+                                    <div  class="mx-5 col child1 border border-danger" style="border-radius: 8px; box-shadow: 0px -1px 9px white;" >
                                         <img src="img/quote2.png" alt="quote 2" style="pointer-events: none;">
                                         <p class="font-italic text-center ">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident modi sunt earum sequi sed maxime, temporibus laudantium quos dolorum corrupti quibusdam facere velit nam deserunt dignissimos obcaecati atque iste! Sed labore voluptatem quam id facilis ipsa. Quod, voluptates quaerat dolore eum architecto iusto earum soluta iste rerum perferendis ullam eveniet! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, voluptatum.
@@ -100,14 +103,14 @@
                     </div>
                     <div class="carousel-item" data-bs-interval="10000">
                         <div class="row my-5">
-                            <div class="col-lg-5">
-                                <div class="deg deg0 w-100 text-end mt-5">
+                            <div class="col-lg-5 align-content-center mt-5">
+                                <div class="deg deg0 w-100 text-end mt-5 ">
                                     <div class="px-3 pb-4" style=" height: 116px; z-index: 3; position: relative;">
-                                        <h2 class="text-ouverture mx-4 text-light">La première promo DWWM <br><span>2019</span></h2>
+                                        <h2 class="text-ouverture mx-4 text-light">La première promo DWWM<br><span>2019</span></h2>
                                     </div>
                                 </div>
-                                <div style="z-index: 1; position: relative;" class="mx  deg deg1 w-100"></div>
-                                <div style="z-index: 2; position: relative;" class="deg deg2 w-100" ></div>
+                                <div style="z-index: 1; position: relative;" class=" mx deg deg1 w-100"></div>
+                                <div style="z-index: 2; position: relative;" class=" deg deg2 w-100" ></div>
                             </div>
                             <div class="col">
                                 <div class="row parent">
@@ -127,14 +130,14 @@
                     </div>
                 <div class="carousel-item" data-bs-interval="10000">
                     <div class="row my-5">
-                        <div class="col-lg-5">
-                            <div class="deg deg0 w-100 text-end">
+                        <div class="col-lg-5 align-content-center mt-5">
+                            <div class="deg deg0 w-100 text-end mt-5 ">
                                 <div class="px-3 pb-4" style=" height: 116px; z-index: 3; position: relative;">
                                     <h2 class="text-ouverture mx-4 text-light">L'ouverture de la fabrique <br><span>2020</span></h2>
                                 </div>
                             </div>
-                            <div style="z-index: 1; position: relative;" class="mx  deg deg1 w-100"></div>
-                            <div style="z-index: 2; position: relative;" class="deg deg2 w-100" ></div>
+                            <div style="z-index: 1; position: relative;" class=" mx deg deg1 w-100"></div>
+                            <div style="z-index: 2; position: relative;" class=" deg deg2 w-100" ></div>
                         </div>
                         <div class="col">
                             <div class="row parent">
@@ -153,37 +156,31 @@
                     </div>
                 </div>
             </aside>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-nos-ph" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button><br><br>
+            
         </div>
         </section>
                                             <!-- notre pédagogie -->	
-        <section class="container-fluid" id="notrePedagogie">
-            <div class="row my-5">
-                <div class="col text-center"><p class="blog-title" >Notre pédagogie</p></div>
-            </div>
-            <div class="row my-5 px-5">
-                <div class="col-sm-12 col-md-6 w-md-25">
-                    <iframe width="586" height="363" src="https://www.youtube.com/embed/0PeqnLq12V8" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <section class="container-fluid">
+            <div class="row mx-5">
+                <div class="row ">
+                    <div class="col text-center"><p class="blog-title" >Notre pédagogie</p></div>
                 </div>
-                <div class="col-sm-12 col-md-6 ">
-                    <h2 class="mb-5" >La pédagogie active</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Sed dolorem, quisquam ad aliquam voluptate et, esse corrupti, nulla animi itaque sint vel deleniti nostrum adipisci? Vitae eaque doloribus molestias aspernatur enim id optio ullam incidunt veritatis, ratione quos, officia debitis? Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Dignissimos, labore quibusdam, voluptatem adipisci iste cupiditate beatae iure, suscipit nemo delectus incidunt fugit reprehenderit laborum. Cumque odit quia distinctio eius sequi! </p>
-                </div>
-            </div>      
-            <div class="row my-5">
-                <div class="col-2"></div><div class="col-2"></div><div class="col-1"></div>
-                <div class="col-1 trait bg-danger border border-danger"></div>
-                <div class="col-2"></div><div class="col-2"></div><div class="col-2"></div>
+                <div class="row my-3">
+                    <div class="col col-sm-12 text-start col-md-7">
+                        <iframe class="video-pedagogie" width="636" height="323" src="https://www.youtube.com/embed/0PeqnLq12V8" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class=" col col-sm-12 col-md-5">
+                        <h2 class="mb-5" >La pédagogie active</h2>
+                        <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Sed dolorem, quisquam ad aliquam voluptate et, esse corrupti, nulla animi itaque sint vel deleniti nostrum adipisci? Vitae eaque doloribus molestias aspernatur enim id optio ullam incidunt veritatis, ratione quos, officia debitis? Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Dignissimos, labore quibusdam, voluptatem adipisci iste cupiditate beatae iure, suscipit nemo delectus incidunt fugit reprehenderit laborum. Cumque odit quia distinctio eius sequi! </p>
+                    </div>
+                </div>      
             </div>
-            <div class="row ">
+            <div class="row">
                 <div class="col-8">
-                    <div class="row mx-5">
+                    <div class="row ">
                         <div class="row mx-1 ">
                             <div class="col w-100 ">
-                                <h2>Les 6 pliers de notre pédagogie</h2>
+                                <h2 class="text-start border ">Les 6 pliers de notre pédagogie</h2>
                             </div>
                         </div>
                         <div class="row w-100 plier-6">
@@ -194,7 +191,7 @@
                                             <img src="img/cercle1.png" class="cercle-couper d-none d-xl-inline-block" alt="Img incompatible avec le navigateur">
                                         </div>
                                     </div>
-                                    <div class="row px-2 py-3">
+                                    <div class="row px-2 ">
                                         <div class=" col col-12 col-md-6 d-inline d-md-block ">
                                             <div class="row mx-2 shadow plier" >
                                                 <div class="row " >
@@ -226,7 +223,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row px-2 py-3">
+                                    <div class="row px-2 ">
                                         <div class="col col-12 col-md-6">
                                             <div class="row mx-2 shadow plier" >
                                                 <div class="row " >
@@ -291,8 +288,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col d.none d-md-block">
-                                    <div class="row justify-content-end d-none d-sm-block">
+                                <div class="col col-12 col-md-5">
+                                    <div class="row justify-content-end ">
                                         <div class="col valeur_slide w-75">
                                         
                                         </div>
@@ -306,7 +303,7 @@
         </section>
                                                     <!--  Nos valeurs  --> 
         <section class="container" id="nosValeurs">
-            <div class="row my-5">
+            <div class="row ">
                 <div class="col text-center"><h2 class="text-center blog-title">Nos valeurs</h2></div>
             </div>
             <article class="row ">
@@ -341,11 +338,12 @@
                     </div>
                     <div class="row my-4">
                         <div class="d-none d-sm-block col-1">
-                                    <!-- triangle -->
+                                <!-- //triangle -->
                         </div>
+
                         <div class="col mx-5">
-                            <div class="row onglet-content engagement " onclick="ongletFocus(this.getAttribute('id'),1, 130)">
-                                <div class="col col-12 col-md-6 w-25">
+                            <div class="row onglet-content engagement " onclick="ongletFocus(this.getAttribute('id'),1, 135)">
+                                <div class="col col-12 col-sm-3">
                                     <h2 class="onglet-number">02</h2>
                                 </div>
                                 <div class="col">
@@ -355,9 +353,10 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="row my-4">
                         <div class="d-none d-sm-block col-1">
-                                    <!-- triangle -->
+                                <!-- //triangle -->
                         </div>
                         <div class="col mx-5">
                             <div class="row onglet-content engagement " onclick="ongletFocus(this.getAttribute('id'),2, 260)">
@@ -373,7 +372,7 @@
                     </div>
                     <div class="row my-4">
                         <div class="d-none d-sm-block col-1">
-                            <!-- triangle -->
+                                <!-- //triangle -->
                         </div>
 
                         <div class="col mx-5">
@@ -391,7 +390,7 @@
                 </div>
         </article>  
         </section>
-                                                        <!-- nos chiffres-->
+                                                        <!-- nos chiffres -->
         <section class="container-fluid my-5 " id="nosChiffres">
             <div class="row">
                 <div class="col text-center"><p class="blog-title">Nos chiffres</p></div>
@@ -674,7 +673,7 @@
                 </aside>
                 <aside class="row ">
                     <figure class="col col-md-6 col-sm-12 d-sm-none d-md-block">
-                        <img src="img/equipe.png" alt="">
+                        <img src="img/equipe.png" class="photo-teem-simplon" alt="équipe de SIMPLON">
                         <figcaption>Equipe des formateurs de SIMPLON-SÉNÉGAL</figcaption>
                     </figure>
                     <div class="col col-md-6 col-sm-12 px-5" >
@@ -894,7 +893,8 @@
                 </div>
             </section>
         </section>
-        <!-- Nos partenaire-->	
+                                             <!-- Nos partenaire-->	
+
         <section id="carousel-nos-partenaire" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="7000">

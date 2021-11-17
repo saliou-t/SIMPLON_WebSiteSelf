@@ -40,5 +40,5 @@ function ongletFocus(classe, number, marginT){
 	//search barr
 	function search(){
 		var formSearch = document.getElementById('searchBar');
-		formSearch.style.display = 'inline';
+		formSearch.style.display = 'inline-block';
 	}
