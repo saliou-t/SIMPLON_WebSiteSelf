@@ -216,7 +216,7 @@ p{
 .chiffres{
 	padding-top: 60px;
 	min-height: 250px;
-	background-image: url("img/bgChiffre.png");
+	background-image: url("../img/bgChiffre.png");
 }
 .chiffres h1{
 	color: white;
@@ -231,12 +231,12 @@ p{
 /*footer*/
 
 .footer{
-	background-image: url("img/bgFooter.png");
+	background-image: url("../img/bgFooter.png");
 	width: 100%;
 	height: auto;
 	color: white;
 }
-.footer
+
 
 /*Recrutement*/
 
@@ -244,8 +244,8 @@ p{
 	height: 40px;
 }
 .accordion-button::after {
-	background-image: url("img/iconePlus.png");
+	background-image: url("../img/iconePlus.png");
 }
 .accordion-button:not(.collapsed)::after {
-	background-image: url("img/iconeMoins.png");
+	background-image: url("../img/iconeMoins.png");
 }
