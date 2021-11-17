@@ -10,6 +10,12 @@
 	.footer .row{
 		text-align: center;
 	}
+	.plier{
+		border-left: 7px solid #CD0033;
+		border-bottom: none !important;
+		margin: 15px 15px !important;
+
+	}
   }
 
 body{
@@ -114,7 +120,6 @@ p{
 .valeur{
 	border-bottom: 9px solid #CD0033;
 	box-shadow: 0px 1px 20px 1px #DEDEDE;
-	font-family: sans-serif;
 	font-size: 13px;
 	height: 160px;
 	font-size: 14px;
@@ -129,6 +134,7 @@ p{
 }
 .valeur_slide{
 	z-index: 1000;
+	float: right;
 	background-image: url("../img/slide1.jpg");
 	box-shadow: 17px -16px #CD0033;
 	border-radius: 20px;
@@ -236,6 +242,9 @@ p{
 }
 
 .plier{
+	margin: 5px 5px;
+	padding: 10px 10px;
+	width: 340px ;
 	border-bottom: 7px solid #CD0033
 }
 /*Nos chiffre*/
