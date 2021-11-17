@@ -142,6 +142,24 @@ p{
 	border-radius: 0px 0px 80px 0px;
 	text-align: right;
 }
+.cercle-deco{
+    width: 10%;
+    height: 10%;
+    margin-top: -150px;
+    margin-left: -790px;
+    z-index: 3;
+    opacity: 100%;
+    position: relative;
+}
+.cercle-couper{
+    width: 10%;
+    height: 10%;
+    margin-top: -830px;
+    margin-left: 650px;
+    z-index: 3;
+    opacity: 100%;
+    position: relative;
+}
 
 /*Nos valeurs*/
 .triangle {
