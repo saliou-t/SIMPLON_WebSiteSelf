@@ -231,7 +231,13 @@ p{
 	font-weight: 500 ;
 	color: #CD0033;
 }
+.formateur{
+	padding-left:52px;
+}
 
+.plier{
+	border-bottom: 7px solid #CD0033
+}
 /*Nos chiffre*/
 
 .chiffres{
