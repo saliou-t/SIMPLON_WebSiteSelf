@@ -7,6 +7,9 @@
 	.onglet-content {
 		min-width: 190px;
 	}
+	.footer .row{
+		text-align: center;
+	}
   }
 
 body{
@@ -254,6 +257,11 @@ p{
 	height: auto;
 	color: white;
 }
+.footer h2{
+	color: white;
+	font-weight: bold;
+}
+
 
 
 /*Recrutement*/
