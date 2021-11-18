@@ -18,7 +18,7 @@ var donnees = [
 	["Volonte",
 	"Lorem Ipsum is simply dummy text of the printing and typesetting ind type specimen book. It has survived not only five centurie an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
 	"www.volonte_link.com",
-],
+	],
 ];
 
 function ongletFocus(classe, number, marginT){
@@ -34,11 +34,10 @@ function ongletFocus(classe, number, marginT){
 		
 		var triangle = document.getElementById('triangle');
 		triangle.style.top = marginT+'px';
-		
 	}
 
-	//search barr
+	//search barre
 	function search(){
 		var formSearch = document.getElementById('searchBar');
-		formSearch.style.display = 'inline-block';
+		formSearch.style.display = 'inline';
 	}

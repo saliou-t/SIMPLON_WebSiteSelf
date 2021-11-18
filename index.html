@@ -13,7 +13,7 @@
                                          <!-- Barre de  navigation-->
 <body> 
     <main>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="img/logo1.png" class="mx-4" width="170" height="60" alt=""></a>
                 <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,10 +22,10 @@
                 <div class="collapse navbar-collapse mx-3 px-5 " id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                            <a class="nav-link text-dark " aria-current="page" href="#">Accueil</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle active text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Fabrique
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -63,49 +63,49 @@
                 </div>
             </div>
         </nav>
-        <section id="searchBar" class="d-none">
+        <!-- <section id="searchBar" class="">
             <form class="d-flex">
                 <input class="form-control me-sm-2" type="text" placeholder="Search">
                 <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
               </form>
-        </section>
+        </section> -->
                                                             <!-- La petite histoire-->
         <section class="container-fluid">
             <div id="carousel-nos-ph" class="carousel slide" data-bs-ride="carousel">
                 <div class="col justify-content"><h2 class="text-center blog-title">La petite histoire</h2></div>
                 <aside class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
-                        <div class="row my-5">
-                            <div class="col-lg-5 align-content-center mt-5">
+                        <div class="row my-5 ">
+                            <div class="col col-lg-6 align-content-center mt-5">
                                 <div class="deg deg0 w-100 text-end mt-5 ">
-                                    <div class="px-3 pb-4" style=" height: 116px; z-index: 3; position: relative;">
-                                        <h2 class="text-ouverture mx-4 text-light">L'ouverture de la fabrique <br><span>2018</span></h2>
+                                    <div class="px-3 pb-4 ph-title" >
+                                        <h2 class="text-ouverture mx-4 text-light">L'ouverture de la fabrique<br><span>2018</span></h2>
                                     </div>
                                 </div>
                                 <div style="z-index: 1; position: relative;" class=" mx deg deg1 w-100"></div>
                                 <div style="z-index: 2; position: relative;" class=" deg deg2 w-100" ></div>
                             </div>
                             <div class="col">
-                                <div class="row parent">
-                                    <div  class="mx-5 col child1 border border-danger" style="border-radius: 8px; box-shadow: 0px -1px 9px white;" >
-                                        <img src="img/quote2.png" alt="quote 2" style="pointer-events: none;">
-                                        <p class="font-italic text-center ">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident modi sunt earum sequi sed maxime, temporibus laudantium quos dolorum corrupti quibusdam facere velit nam deserunt dignissimos obcaecati atque iste! Sed labore voluptatem quam id facilis ipsa. Quod, voluptates quaerat dolore eum architecto iusto earum soluta iste rerum perferendis ullam eveniet! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, voluptatum.
+                                <div class="row h-100 justify-content-center">
+                                    <div class="col-9 border border-danger h-100 ph-text bg-light">
+                                    <img src="img/quote2.png" class="quote2" alt="quote 2" style="pointer-events: none;">
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ad atque veniam neque quisquam ex, soluta reprehenderit impedit doloremque assumenda, commodi deserunt modi iusto, et culpa distinctio consequuntur! Laboriosam expedita obcaecati optio dignissimos libero quia incidunt eaque cumque natus ab minima ducimus, saepe minus nihil maxime rem doloribus magni? Debitis aspernatur accusantium est iusto reprehenderit, culpa placeat maxime eveniet error?
                                         </p>
-                                        <img alt="quoite 1" style="font-size: 30px; pointer-events: none; float: right;" src="img/quote1.png">
+                                    <img src="img/quote1.png" class="quote1" alt="quote 2">
                                     </div>
-                                    <div class="col-md child2 shadow-lg">
-                                
+                                    <div class="border h-100 ph-text-bg d-none d-md-block">
+    
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="10000">
-                        <div class="row my-5">
-                            <div class="col-lg-5 align-content-center mt-5">
+                        <div class="row my-5 ">
+                            <div class="col col-lg-6 align-content-center mt-5">
                                 <div class="deg deg0 w-100 text-end mt-5 ">
-                                    <div class="px-3 pb-4" style=" height: 116px; z-index: 3; position: relative;">
+                                    <div class="px-3 pb-4 ph-title" >
                                         <h2 class="text-ouverture mx-4 text-light">La première promo DWWM<br><span>2019</span></h2>
                                     </div>
                                 </div>
@@ -113,63 +113,62 @@
                                 <div style="z-index: 2; position: relative;" class=" deg deg2 w-100" ></div>
                             </div>
                             <div class="col">
-                                <div class="row parent">
-                                    <div  class="mx-5 col child1 px-5  border border-danger" style="border-radius: 8px; box-shadow: 0px -1px 9px white;" >
-                                        <img src="img/quote2.png" alt="quote 2" style="pointer-events: none;">
-                                        <p class="font-italic text-center">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident modi sunt earum sequi sed maxime, temporibus laudantium quos dolorum corrupti quibusdam facere velit nam deserunt dignissimos obcaecati atque iste! Sed labore voluptatem quam id facilis ipsa. Quod, voluptates quaerat dolore eum architecto iusto earum soluta iste rerum perferendis ullam eveniet! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, voluptatum.
+                                <div class="row h-100 justify-content-center">
+                                    <div class="col-9 border border-danger h-100 ph-text bg-light">
+                                    <img src="img/quote2.png" class="quote2" alt="quote 2" style="pointer-events: none;">
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ad atque veniam neque quisquam ex, soluta reprehenderit impedit doloremque assumenda, commodi deserunt modi iusto, et culpa distinctio consequuntur! Laboriosam expedita obcaecati optio dignissimos libero quia incidunt eaque cumque natus ab minima ducimus, saepe minus nihil maxime rem doloribus magni? Debitis aspernatur accusantium est iusto reprehenderit, culpa placeat maxime eveniet error?
                                         </p>
-                                        <img alt="quoite 1" style="font-size: 30px; pointer-events: none; float: right;" src="img/quote1.png">
+                                    <img src="img/quote1.png" class="quote1" alt="quote 2">
                                     </div>
-                                    <div class="sous-blog2 col-md child2 shadow-lg">
-                                
+                                    <div class="border h-100 ph-text-bg d-none d-md-block">
+    
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 <div class="carousel-item" data-bs-interval="10000">
-                    <div class="row my-5">
-                        <div class="col-lg-5 align-content-center mt-5">
+                    <div class="row my-5 ">
+                        <div class="col col-lg-6 align-content-center mt-5">
                             <div class="deg deg0 w-100 text-end mt-5 ">
-                                <div class="px-3 pb-4" style=" height: 116px; z-index: 3; position: relative;">
-                                    <h2 class="text-ouverture mx-4 text-light">L'ouverture de la fabrique <br><span>2020</span></h2>
+                                <div class="px-3 pb-4 ph-title" >
+                                    <h2 class="text-ouverture mx-4 text-light">La première promo DWWM<br><span>2020</span></h2>
                                 </div>
                             </div>
                             <div style="z-index: 1; position: relative;" class=" mx deg deg1 w-100"></div>
                             <div style="z-index: 2; position: relative;" class=" deg deg2 w-100" ></div>
                         </div>
                         <div class="col">
-                            <div class="row parent">
-                                <div  class="mx-5 col child1 px-5  border border-danger" style="border-radius: 8px; box-shadow: 0px -1px 9px white;" >
-                                    <img src="img/quote2.png" alt="quote 2" style="pointer-events: none;">
-                                    <p class="font-italic text-center">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident modi sunt earum sequi sed maxime, temporibus laudantium quos dolorum corrupti quibusdam facere velit nam deserunt dignissimos obcaecati atque iste! Sed labore voluptatem quam id facilis ipsa. Quod, voluptates quaerat dolore eum architecto iusto earum soluta iste rerum perferendis ullam eveniet! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, voluptatum.
+                            <div class="row h-100 justify-content-center">
+                                <div class="col-9 border border-danger h-100 ph-text bg-light">
+                                <img src="img/quote2.png" class="quote2" alt="quote 2" style="pointer-events: none;">
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur ad atque veniam neque quisquam ex, soluta reprehenderit impedit doloremque assumenda, commodi deserunt modi iusto, et culpa distinctio consequuntur! Laboriosam expedita obcaecati optio dignissimos libero quia incidunt eaque cumque natus ab minima ducimus, saepe minus nihil maxime rem doloribus magni? Debitis aspernatur accusantium est iusto reprehenderit, culpa placeat maxime eveniet error?
                                     </p>
-                                    <img alt="quoite 1" style="font-size: 30px; pointer-events: none; float: right;" src="img/quote1.png">
+                                <img src="img/quote1.png" class="quote1" alt="quote 2">
                                 </div>
-                                <div class="sous-blog2 col-md child2 shadow-lg">
-                            
+                                <div class="border h-100 ph-text-bg d-none d-md-block">
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </aside>
-            
         </div>
         </section>
                                             <!-- notre pédagogie -->	
-        <section class="container-fluid">
-            <div class="row mx-5">
+        <section class="container">
+            <div class="row mx-3 my-5">
                 <div class="row ">
                     <div class="col text-center"><p class="blog-title" >Notre pédagogie</p></div>
                 </div>
                 <div class="row my-3">
-                    <div class="col col-sm-12 text-start col-md-7">
+                    <div class="col col-sm-12 ms text-start col-md-7">
                         <iframe class="video-pedagogie" width="636" height="323" src="https://www.youtube.com/embed/0PeqnLq12V8" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <div class=" col col-sm-12 col-md-5">
+                    <div class=" col col-sm-12 col-md-5 mx-auto">
                         <h2 class="mb-5" >La pédagogie active</h2>
                         <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Sed dolorem, quisquam ad aliquam voluptate et, esse corrupti, nulla animi itaque sint vel deleniti nostrum adipisci? Vitae eaque doloribus molestias aspernatur enim id optio ullam incidunt veritatis, ratione quos, officia debitis? Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Dignissimos, labore quibusdam, voluptatem adipisci iste cupiditate beatae iure, suscipit nemo delectus incidunt fugit reprehenderit laborum. Cumque odit quia distinctio eius sequi! </p>
                     </div>
@@ -177,7 +176,7 @@
             </div>
             <div class="row container">
                 <div class="col col-12 col-md-8 ">
-                   <div class="row">
+                   <div class="row mx-auto">
                       <div class="col">
                          <h2>Les 6 pliers de notre pédagogie</h2>
                       </div>
@@ -292,7 +291,7 @@
              </div>
         </section>
                                                     <!--  Nos valeurs  --> 
-        <section class="container" id="nosValeurs">
+        <section class="container nos-valeurs px-5" id="nosValeurs">
             <div class="row ">
                 <div class="col text-center"><h2 class="text-center blog-title">Nos valeurs</h2></div>
             </div>
@@ -301,7 +300,7 @@
                     <p id="onglet_text_title" class=" blog-title">Engagement</p>
                     <p id="onglet-text-content">Lorem ipsum dolor sit amet, 
                     consectetur adipisicing elit. Ipsam re Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Assumenda explicabo animi, recusandae a laborum accusamus inventore eum neque optio quia obcaecati alias, deleniti voluptates, dignissimos odio sapiente itaque, accusantium beatae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, enim voluptatum facere nobis dolorum numquam rem, ratione minus non eius.</p>
-                    <div class=" w-sm-100 w-md-75 w-lg-50 mt-5">
+                    <div class=" w-sm-100 w-md-75 w-lg-50 mt-5 ">
                         <div class="col align-content-end btn btn-danger btn-see-more">
                             <a href="#" id="see-more">
                                 En savoir plus
@@ -330,7 +329,6 @@
                         <div class="d-none d-sm-block col-1">
                                 <!-- //triangle -->
                         </div>
-
                         <div class="col mx-5">
                             <div class="row onglet-content engagement " onclick="ongletFocus(this.getAttribute('id'),1, 135)">
                                 <div class="col col-12 col-sm-3">
@@ -343,7 +341,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="row my-4">
                         <div class="d-none d-sm-block col-1">
                                 <!-- //triangle -->
@@ -364,7 +361,6 @@
                         <div class="d-none d-sm-block col-1">
                                 <!-- //triangle -->
                         </div>
-
                         <div class="col mx-5">
                             <div class="row onglet-content engagement " onclick="ongletFocus(this.getAttribute('id'),3, 400)">
                                 <div class="col col-12 col-sm-3">
@@ -378,7 +374,7 @@
                         </div>
                     </div>
                 </div>
-        </article>  
+            </article>  
         </section>
                                                         <!-- nos chiffres -->
         <section class="container-fluid my-5 " id="nosChiffres">
@@ -838,20 +834,20 @@
                     </div>
                 </div>
                 <div class="col col-sm-12 col-md-6 form-group">
-                    <form action="#">
+                    <form action="#" class="form-contat">
                         <div class="row form-group my-5  mx-4">
-                            <div class="col-6">
+                            <div class="col col-12 col-sm-6">
                                 <input type="text" class="form-control" style="box-shadow: inset 0px 0px 3px 1px #C3C3C3; height: 48px;" placeholder="Prénom *">
                             </div>
-                            <div class="col-6">
+                            <div class="col col-12 col-sm-6">
                                 <input type="text" class="form-control"  style="box-shadow: inset 0px 0px 3px 1px #C3C3C3; height: 48px;" placeholder="Nom *">
                             </div>
                         </div>
                         <div class="row form-group my-4  mx-4">
-                            <div class="col-6">
+                            <div class="col col-12 col-sm-6">
                                 <input type="text" class="form-control"  style="box-shadow: inset 0px 0px 3px 1px #C3C3C3; height: 48px;" placeholder="Tél *">
                             </div>
-                            <div class="col-6">
+                            <div class="col col-12 col-sm-6">
                                 <input type="text" class="form-control"  style="box-shadow: inset 0px 0px 3px 1px #C3C3C3; height: 48px;" placeholder="Email *">
                             </div>
                         </div>

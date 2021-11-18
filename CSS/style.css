@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
-.font-italic{
-	 font-style: italic !important; 
-}
+
 @media only screen and (max-width: 576px) {
 	.onglet-content {
 		min-width: 190px;
+	}
+	ul li {
+		background-color: white;
+		padding: 10px 10px;
 	}
 	.footer .row{
 		text-align: center;
@@ -16,15 +18,13 @@
 		margin: 15px 10px !important;
 	}
 	.parent{
-		margin-left: -110px !important;
-		width: 500px;
 		margin-top: -120px !important;
 	}
 	.carousel-item{
 		margin-top: -90px;
 	}
 	.photo-teem-simplon{
-		width: 460px;
+		width: 370px;
 	}
 	.video-pedagogie{
 		width: 420px;
@@ -33,6 +33,16 @@
 	.navbar-toggler{
 		background-color: #CD0033 !important ;
 		border: none !important;
+	}
+	.ph-title h2{
+		font-size: 27px !important;
+	}
+	.ph-title{
+		margin-top: -30px ;
+		height: 100px !important;
+	}
+	.ph-text{
+		margin-top: -100px !important;
 	}
   }
 
@@ -44,6 +54,9 @@ nav{
 	height: 80px;
 	box-shadow:0px 2px 5px gray;
 	margin-bottom: 30px;
+}
+nav ul{
+	margin-left: 120px !important;
 }
 nav ul li {
 	margin-right: 19px;
@@ -60,6 +73,10 @@ button{
 	border-radius: 15px;
 	color: white;
 }
+
+
+/* searchBar */
+
 .blog-title{
 	font-weight: bold;
 	font-size: 32px;
@@ -72,28 +89,40 @@ button{
 .nav-link{
 	color: red;
 }
-.child1 {
-	position: relative;
-	padding: 20px 20px 20px 20px;
+.ph-text{
+	color: rgb(0, 0, 0);
+	font-style: italic;
 	z-index: 950;
-	width: 700px;
-	background-color: white;
-	left: 90px; border-radius: 8px; 
-	box-shadow: 0px 0px 5px white;
+	border-radius: 19px;
+	width: 420px !important;
+	box-shadow: 2px 2px 9px white;
+
 }
-.child1 .child2{
-	display: contents;
+.ph-text p{
+	text-align: center;
+	padding : 20px 20px;
+    font-size: 16px;
 }
-.child2 {
-	position: relative;
-	min-width: 24em;
+.ph-text-bg{
+	width: 420px !important;  
+	position: relative; 
+	background-color:#CD0033; 
+	top: -475px; 
+	left: -30px;
 	z-index: 900;
-	background-color: #CD0033;
-	left: -43%;
-	top: -22px;
 	transform: rotate(6deg);
-	border-radius: 8px;
+	border-radius: 19px;
 }
+img{
+	pointer-events: none;
+}
+.quote2{
+	padding-top: 16px;
+}
+.quote1{
+	float: right;
+}
+
 
 .deg{
 	min-height: 100px;
@@ -107,24 +136,47 @@ button{
 	background-color: rgba(205, 0, 51, 0.75);
 	position: relative;
 	top: -85px;
+	z-index: 1; 
+	position: relative;
 }
 .deg2{
 	background-color: rgba(205, 0, 51, 0.5);
 	position: relative;
 	top: -170px;
+	z-index: 2; 
+	position: relative;
+}
+.ph-title{
+	height: 150px;
+	z-index: 3;
+	position: relative;
+}
+.ph-bloc{
+	border-radius: 8px; 
+	box-shadow: 0px -1px 9px white;
+	width: 600px !important;
+}
+.ph-title h2{
+	padding: 10px 10px !important;
+	font-size: 45px;
+	margin-right: 19px !important;
+	font-weight: bold;
+}
+.ph-blog-text{
+	width: 500px;
 }
 .text-ouverture{
 	font-weight: 66px;
 	float: right;
 }
+
+
 .text-date{
 	float: right;
 	font-weight: bold;
 	font-size: 70px;
 }
-.blog8{
-	position: relative;
-}
+
 h1, h2, h3{
 	color: #CD0033;
 }
@@ -168,24 +220,6 @@ p{
 	margin: 15px 15px;
 	border-radius: 0px 0px 80px 0px;
 	text-align: right;
-}
-.cercle-deco{
-    width: 10%;
-    height: 10%;
-    margin-top: -150px;
-    margin-left: -790px;
-    z-index: 3;
-    opacity: 100%;
-    position: relative;
-}
-.cercle-couper{
-    width: 10%;
-    height: 10%;
-    margin-top: -830px;
-    margin-left: 650px;
-    z-index: 3;
-    opacity: 100%;
-    position: relative;
 }
 
 /*Nos valeurs*/
@@ -236,7 +270,7 @@ p{
 	border-radius: 90px !important;
 } 
 .btn-see-more a{
-	padding: 4px;
+	padding: 8px;
 	color: white;
 	text-decoration: none;
 }
@@ -260,10 +294,13 @@ p{
 }
 
 .plier{
-	margin: 5px 5px;
+	margin: 25px 5px;
 	padding: 10px 10px;
 	width: 340px ;
 	border-bottom: 7px solid #CD0033
+}
+.form-contact div input{
+	margin-top: 30px !important;
 }
 /*Nos chiffre*/
 
