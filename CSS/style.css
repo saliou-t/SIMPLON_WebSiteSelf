@@ -30,6 +30,10 @@
 		width: 420px;
 		margin-left: -40px;
 	}
+	.navbar-toggler{
+		background-color: #CD0033 !important ;
+		border: none !important;
+	}
   }
 
 body{
