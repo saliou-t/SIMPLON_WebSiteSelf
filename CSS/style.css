@@ -284,9 +284,13 @@ p{
 
 /*Equipe*/
 
+.equipe{
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
 .equipe h6{
 	font-weight: bold;
 	color: #CD0033;
+
 }
 .equipe p{
 	padding-top: -20px;
@@ -312,6 +316,7 @@ p{
 	padding-top: 60px;
 	min-height: 250px;
 	background-image: url("../img/bgChiffre.png");
+	background-size: cover;
 }
 .chiffres h1{
 	color: white;
@@ -326,6 +331,7 @@ p{
 
 .footer{
 	background-image: url("../img/bgFooter.png");
+	background-size: cover;
 	width: 100%;
 	height: auto;
 	color: white;
@@ -334,7 +340,11 @@ p{
 	color: white;
 	font-weight: bold;
 }
-
+.footer-madeBy{
+	background-color: #CD0033; 
+	color: white; 
+	height: 50px;
+}
 
 
 /*Recrutement*/
