@@ -27,7 +27,8 @@
 		width: 370px;
 	}
 	.video-pedagogie{
-		width: 420px;
+		padding: 5px 5px;
+		width: 480px !important;
 		margin-left: -40px;
 	}
 	.navbar-toggler{
@@ -186,6 +187,9 @@ h4{
 }
 p{
 	font-size: 16px;
+}
+.video-pedagogie{
+	width: 636px;
 }
 .valeur{
 	border-bottom: 9px solid #CD0033;
